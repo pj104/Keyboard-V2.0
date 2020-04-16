@@ -1,0 +1,476 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>CSS绘制的游戏机手柄</title>
+<style>
+/*resets those pesky list items*/
+
+ul,
+li,
+ol {
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+body {
+    background: #1e1300;
+}
+/* calculations */
+/* colors */
+/* mixins */
+
+aside {
+    display: none;
+}
+@media screen and (min-width: 800px) {
+    aside {
+        width: 900px;
+        max-width: 100%;
+        text-align: center;
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #D1D1D1;
+        font-family: sans-serif;
+        font-size: 110%;
+        display: initial;
+    }
+    aside > a {
+        color: #B9B7E4;
+        text-decoration: none;
+    }
+    aside > a:hover {
+        color: #5D46AE;
+    }
+}
+/*---BODY---*/
+
+.controller {
+    width: 500px;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    position: fixed;
+}
+.controller-side:before {
+    content: " ";
+    display: block;
+    width: 205px;
+    height: 198px;
+    position: absolute;
+    top: 1px;
+    border-radius: 100%;
+}
+.controller-side.dpad:before {
+    left: 3px;
+    top: 1px;
+}
+.controller-side.buttons:before {
+    right: 3px;
+    top: 1px;
+}
+.controller-side {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    float: left;
+}
+.controller-side.dpad {
+    background: linear-gradient(180deg, #ddd 0%, #666 100%);
+}
+.controller-side.buttons {
+    background: linear-gradient(225deg, #ddd 0%, #eee 25%, #666 75%);
+}
+.buttons {
+    right: 0%;
+}
+.controller-center {
+    width: 300px;
+    height: 183.33333px;
+    margin-left: -100px;
+    margin-right: -100px;
+}
+.controller-center:after {
+    content: " ";
+    position: absolute;
+    width: 300px;
+    height: 5px;
+    background: linear-gradient(#666, #eee 10%, transparent 100%);
+}
+.controller-center:before {
+    content: " ";
+    position: absolute;
+    height: 2px;
+    width: 190px;
+    background: linear-gradient(transparent, #666);
+    bottom: 17px;
+    left: 162px;
+}
+.controller-side:before,
+.controller-center {
+    background: #D1D1D1;
+    float: left;
+}
+/*---RIGHT SIDE---*/
+
+.controller-inner.right {
+    width: 180px;
+    height: 180px;
+    background: #ACA9AC;
+    top: 10px;
+    right: 10px;
+    border-radius: 100%;
+    border: 1px solid #aaa;
+    position: absolute;
+}
+.buttons ul {
+    position: absolute;
+    right: 90px;
+    top: 90px;
+    transform: translate(50%, -50%);
+    width: 130px;
+    height: 130px;
+}
+.buttons li {
+    border: 1px solid #333;
+    display: block;
+    height: 27px;
+    width: 27px;
+    border-radius: 100%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+}
+.buttons .underlay li {
+    height: 35px;
+    width: 35px;
+    border: none;
+    background: #D1D1D1;
+}
+.buttons .y,
+.buttons .x {
+    background: radial-gradient(farthest-corner at 10% 90%, #e1e1ef 0%, #cbcbed 30%, #b9b7e4 50%, #b9b7e4 70%, #e1e1ef 95%);
+}
+.buttons .a,
+.buttons .b {
+    background: radial-gradient(farthest-corner at 75% 0%, #dddaed 0%, #9f90dd 20%, #5d46ae 50%, #5d46ae 70%, #43337c 90%);
+}
+.buttons .a {
+    left: 80%;
+    top: 50%;
+}
+.buttons .overlay .a:after {
+    content: "A";
+}
+.buttons .b {
+    left: 50%;
+    top: 75%;
+}
+.buttons .overlay .b:after {
+    content: "B";
+}
+.buttons .x {
+    left: 50%;
+    top: 25%;
+}
+.buttons .overlay .x:after {
+    content: "X";
+}
+.buttons .y {
+    left: 20%;
+    top: 50%;
+}
+.buttons .overlay .y:after {
+    content: "Y";
+}
+.buttons .y:after,
+.buttons .b:after {
+    position: absolute;
+    right: 115%;
+    top: 90%;
+    font-family: sans-serif;
+    color: #D1D1D1;
+    font-style: italic;
+    font-size: 85%;
+}
+.buttons .a:after,
+.buttons .x:after {
+    position: absolute;
+    right: -60%;
+    top: -35%;
+    font-family: sans-serif;
+    color: #D1D1D1;
+    font-style: italic;
+    font-size: 85%;
+}
+.underlay-span {
+    width: 52px;
+    height: 35px;
+    background: #D1D1D1;
+    position: absolute;
+}
+.underlay-span.ab {
+    right: 16%;
+    top: 50%;
+    transform: rotate(-40deg);
+}
+.underlay-span.xy {
+    left: 14%;
+    top: 25%;
+    transform: rotate(-40deg);
+}
+/*---LEFT SIDE----*/
+
+.controller-inner.left {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(235deg, #aaa, #eee);
+    border-radius: 100%;
+    margin-left: 47px;
+    margin-top: 47px;
+    position: absolute;
+}
+.controller-inner.left:after {
+    content: " ";
+    display: block;
+    width: 97px;
+    height: 97px;
+    background: #333;
+    margin-top: 1px;
+    margin-left: 1px;
+    border-radius: 100%;
+    background: #D1D1D1;
+}
+.d-pad {
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.d-pad:after,
+.d-pad:before {
+    content: " ";
+    display: block;
+    height: 60px;
+    width: 15px;
+    background: #717574;
+    left: 50%;
+    border-radius: 3px;
+    border: 2px solid #444;
+    border-bottom: 1px;
+    transform: translateX(-50%);
+    position: absolute;
+}
+.d-pad:before {
+    transform: translateX(-50%) rotate(90deg);
+}
+.arrows {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    margin: 0;
+}
+.arrows li {
+    list-style-type: none;
+    margin: 0;
+    width: 2px;
+    height: 0px;
+    display: block;
+    background: transparent;
+    position: absolute;
+    z-index: 1;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 10px solid #555;
+    border-radius: 2px;
+}
+.arrows .right {
+    transform: translate(-50%, -50%) rotate(90deg);
+    left: 85%;
+    top: 50%;
+}
+.arrows .left {
+    transform: translate(-50%, -50%) rotate(270deg);
+    left: 15%;
+    top: 50%;
+}
+.arrows .up {
+    transform: translate(-50%, -50%) rotate(0deg);
+    left: 50%;
+    top: 15%;
+}
+.arrows .down {
+    transform: translate(-50%, -50%) rotate(180deg);
+    left: 50%;
+    top: 85%;
+}
+.center {
+    width: 19px;
+    height: 19px;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    background: #717574;
+    z-index: 1;
+}
+.center:after {
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: radial-gradient(farthest-corner at 30% 70%, #888888, #545454 70%);
+    content: " ";
+    border-radius: 100%;
+}
+/*---CENTER------*/
+
+.controller-center .button {
+    width: 39px;
+    height: 16px;
+    display: block;
+    background: linear-gradient(280deg, #555, #555 10%, #999 25%, #999 75%, #eee 90%);
+    border-radius: 10px;
+    position: absolute;
+}
+.controller-center .button:before {
+    width: 35px;
+    height: 12px;
+    display: block;
+    background: linear-gradient(#444, #717574, #444);
+    border-radius: 10px;
+    margin-top: 2px;
+    margin-left: 2px;
+    content: " ";
+}
+.button.select {
+    transform: translate(-50%, -50%) rotate(-40deg);
+    left: 42%;
+    top: 60%;
+}
+.controller-center .button:after {
+    font-family: sans-serif;
+    font-style: italic;
+    font-size: 60%;
+    transform: rotate(40deg);
+    display: block;
+    margin-top: 15px;
+    margin-left: -15px;
+    color: #ACA9AC;
+}
+.button.select:after {
+    content: "SELECT";
+}
+.button.start:after {
+    content: "START";
+}
+.button.start {
+    transform: translate(-50%, -50%) rotate(-40deg);
+    left: 52%;
+    top: 60%;
+}
+/*---R AND L BUTTONS---*/
+
+.top-button {
+    width: 100px;
+    height: 100px;
+    display: block;
+    position: absolute;
+    top: -5px;
+    z-index: -1;
+}
+.top-button.right:before,
+.top-button.left:before {
+    content: " ";
+    width: 60%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    border-radius: 3px;
+}
+.top-button.right:after,
+.top-button.left:after {
+    content: " ";
+    display: block;
+    height: 205px;
+    width: 205px;
+    position: absolute;
+}
+.top-button.right:before {
+    right: 0;
+    background: linear-gradient(90deg, #D1D1D1 0%, #D1D1D1 90%, #666 100%);
+}
+.top-button.right {
+    left: 50px;
+}
+.top-button.right:after {
+    background: linear-gradient(235deg, #D1D1D1 0%, #D1D1D1 47%, #666 50%, #666 50%, transparent 50%);
+    border-radius: 100%;
+    left: -55px;
+}
+.top-button.left:before {
+    left: 0;
+    background: linear-gradient(90deg, #666 0%, #D1D1D1 10%, #D1D1D1 100%);
+}
+.top-button.left {
+    right: 50px;
+}
+.top-button.left:after {
+    background: linear-gradient(-235deg, #D1D1D1 0%, #D1D1D1 47%, #666 50%, #666 50%, transparent 50%);
+    border-radius: 100%;
+    right: -53px;
+}
+</style>
+</head>
+<body>
+<div class="controller">
+    <div class="top-button right"></div>
+    <div class="top-button left"></div>
+    <div class="controller-side dpad">
+        <div class="controller-inner left">
+            <div class="d-pad">
+                <ul class="arrows">
+                    <li class="up"></li>
+                    <li class="right"></li>
+                    <li class="down"></li>
+                    <li class="left"></li>
+                </ul>
+                <div class="center">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="controller-center">
+        <div class="button select"></div>
+        <div class="button start"></div>
+    </div>
+    <div class="controller-side buttons">
+        <div class="controller-inner right">
+            <ul class="underlay">
+                <div class="underlay-span xy"></div>
+                <div class="underlay-span ab"></div>
+                <li class="a"></li>
+                <li class="b"></li>
+                <li class="x"></li>
+                <li class="y"></li>
+            </ul>
+            <ul class="overlay">
+                <li class="a"></li>
+                <li class="b"></li>
+                <li class="x"></li>
+                <li class="y"></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<aside>For a break-down of how I built this controller, check out the <a href="https://codepen.io/tstandiford/post/snes-controller" target="blank">related blog post</a>, written here on CodePen.</aside>
+</body>
+</html>
