@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+	<script src="../js/jquery-1.8.3.min.js"></script>
+	<script src="../js/kbcc.js"  charset="GBK"></script>
+	<script src="../js/sticker.js"  charset="GBK"></script>
+	<link href="../css/style.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript">
+		$(document).ready(init);
+	</script>
+  <title>KB104</title>
+ </head>
+ <body>
+	<div id="colors">
+		<ul></ul>
+	</div>
+     <div id="keyboard" style="width:912px;">
+		<ul class="row bspace050">
+			<li class="u100 rspace100 small"><span><span style="display:''">Esc</span></span></li>
+			<li class="u100 small"><span><span style="display:''">F1</span></span></li>
+			<li class="u100 small"><span><span style="display:''">F2</span></span></li>
+			<li class="u100 small"><span><span style="display:''">F3</span></span></li>
+			<li class="u100 rspace050 small"><span><span style="display:''">F4</span></span></li>
+			<li class="u100 small"><span><span style="display:''">F5</span></span></li>
+			<li class="u100 small"><span><span style="display:''">F6</span></span></li>
+			<li class="u100 small"><span><span style="display:''">F7</span></span></li>
+			<li class="u100 rspace050 small"><span><span style="display:''">F8</span></span></li>
+			<li class="u100 small"><span><span style="display:''">F9</span></span></li>
+			<li class="u100 small"><span><span style="display:''">F10</span></span></li>
+			<li class="u100 small"><span><span style="display:''">F11</span></span></li>
+			<li class="u100 rspace025 small"><span><span style="display:''">F12</span></span></li>
+			<li class="u100 smaller"><span><span style="display:''">PrntSc</span></span></li>
+			<li class="u100 smaller"><span><span style="display:''">ScLck</span></span></li>
+			<li class="u100 smaller"><span><span style="display:''">Pause Breack</span></span></li>
+		</ul>
+		<ul class="row">
+			<li class="u100"><span><span style="display:''">`</span></span></li>
+			<li class="u100"><span><span style="display:''">1</span></span></li>
+			<li class="u100"><span><span style="display:''">2</span></span></li>
+			<li class="u100"><span><span style="display:''">3</span></span></li>
+			<li class="u100"><span><span style="display:''">4</span></span></li>
+			<li class="u100"><span><span style="display:''">5</span></span></li>
+			<li class="u100"><span><span style="display:''">6</span></span></li>
+			<li class="u100"><span><span style="display:''">7</span></span></li>
+			<li class="u100"><span><span style="display:''">8</span></span></li>
+			<li class="u100"><span><span style="display:''">9</span></span></li>
+			<li class="u100"><span><span style="display:''">0</span></span></li>
+			<li class="u100"><span><span style="display:''">-</span></span></li>
+			<li class="u100"><span><span style="display:''">=</span></span></li>
+			<li class="u200 rspace025 small"><span><span style="display:''">Backspace</span></span></li>
+			<li class="u100 small"><span><span style="display:''">Ins</span></span></li>
+			<li class="u100 small"><span><span style="display:''">Home</span></span></li>
+			<li class="u100 rspace025 small"><span><span style="display:''">PgUp</span></span></li>
+			<li class="u100 small"><span><span style="display:''">NUM</span></span></li>
+			<li class="u100"><span><span style="display:''">/</span></span></li>
+			<li class="u100"><span><span style="display:''">*</span></span></li>
+			<li class="u100"><span><span style="display:''">-</span></span></li>
+		</ul>
+		<ul class="row" style="float:left;width:860px;">
+			<li class="u150 small"><span><span style="display:''">Tab</span></span></li>
+			<li class="u100"><span><span style="display:''">Q</span></span></li>
+			<li class="u100"><span><span style="display:''">W</span></span></li>
+			<li class="u100"><span><span style="display:''">E</span></span></li>
+			<li class="u100"><span><span style="display:''">R</span></span></li>
+			<li class="u100"><span><span style="display:''">T</span></span></li>
+			<li class="u100"><span><span style="display:''">Y</span></span></li>
+			<li class="u100"><span><span style="display:''">U</span></span></li>
+			<li class="u100"><span><span style="display:''">I</span></span></li>
+			<li class="u100"><span><span style="display:''">O</span></span></li>
+			<li class="u100"><span><span style="display:''">P</span></span></li>
+			<li class="u100"><span><span style="display:''">[</span></span></li>
+			<li class="u100"><span><span style="display:''">]</span></span></li>
+			<li class="u150 rspace025"><span><span style="display:''">\</span></span></li>
+			<li class="u100 small"><span><span style="display:''">Del</span></span></li>
+			<li class="u100 small"><span><span style="display:''">End</span></span></li>
+			<li class="u100 rspace025 small"><span><span style="display:''">PgDn</span></span></li>
+			<li class="u100"><span><span style="display:''">7</span></span></li>
+			<li class="u100"><span><span style="display:''">8</span></span></li>
+			<li class="u100"><span><span style="display:''">9</span></span></li>
+		</ul>
+		<ul style="float:right;width:40px">
+			<li class="u100" style="height:79px;"><span style="height:79px;"><span style="height:79px;display:''">+</span></span></li>
+		</ul>
+		<ul class="row" style="float:left;width:860px;">
+			<li class="u175 small"><span><span style="display:''">CapsLock</span></span></li>
+			<li class="u100"><span><span style="display:''">A</span></span></li>
+			<li class="u100"><span><span style="display:''">S</span></span></li>
+			<li class="u100"><span><span style="display:''">D</span></span></li>
+			<li class="u100"><span><span style="display:''">F</span></span></li>
+			<li class="u100"><span><span style="display:''">G</span></span></li>
+			<li class="u100"><span><span style="display:''">H</span></span></li>
+			<li class="u100"><span><span style="display:''">J</span></span></li>
+			<li class="u100"><span><span style="display:''">K</span></span></li>
+			<li class="u100"><span><span style="display:''">L</span></span></li>
+			<li class="u100"><span><span style="display:''">;</span></span></li>
+			<li class="u100"><span><span style="display:''">'</span></span></li>
+			<li class="u225 rspace350 small"><span><span style="display:''">Enter</span></span></li>
+			<li class="u100"><span><span style="display:''">4</span></span></li>
+			<li class="u100"><span><span style="display:''">5</span></span></li>
+			<li class="u100"><span><span style="display:''">6</span></span></li>
+		</ul>
+
+		<ul class="row" style="float:left;width:860px;">
+			<li class="u225 small"><span><span style="display:''">Shift</span></span></li>
+			<li class="u100"><span><span style="display:''">Z</span></span></li>
+			<li class="u100"><span><span style="display:''">X</span></span></li>
+			<li class="u100"><span><span style="display:''">C</span></span></li>
+			<li class="u100"><span><span style="display:''">V</span></span></li>
+			<li class="u100"><span><span style="display:''">B</span></span></li>
+			<li class="u100"><span><span style="display:''">N</span></span></li>
+			<li class="u100"><span><span style="display:''">M</span></span></li>
+			<li class="u100"><span><span style="display:''">,</span></span></li>
+			<li class="u100"><span><span style="display:''">.</span></span></li>
+			<li class="u100"><span><span style="display:''">/</span></span></li>
+			<li class="u275 rspace125 small"><span><span style="display:''">Shift</span></span></li>
+			<li class="u100 rspace125"><span><span style="display:''">↑</span></span></li>
+			<li class="u100"><span><span style="display:''">1</span></span></li>
+			<li class="u100"><span><span style="display:''">2</span></span></li>
+			<li class="u100"><span><span style="display:''">3</span></span></li>
+		</ul>
+		<ul style="float:right;width:40px">
+			<li class="u100 smaller" style="height:79px;"><span style="height:79px;"><span style="height:79px;display:''">Enter</span></span></li>
+		</ul>
+
+		<ul class="row" style="float:left;width:860px;">
+			<li class="u125 small"><span><span style="display:''">Ctrl</span></span></li>
+			<li class="u125 small"><span><span style="display:''">Win</span></span></li>
+			<li class="u125 small"><span><span style="display:''">Alt</span></span></li>
+			<li class="u625"><span><span style="display:''">&nbsp;</span></span></li>
+			<li class="u125 small"><span><span style="display:''">Alt</span></span></li>
+			<li class="u125 small"><span><span style="display:''">Win</span></span></li>
+			<li class="u125 small"><span><span style="display:''">Menu</span></span></li>
+			<li class="u125 rspace025 small"><span><span style="display:''">Ctrl</span></span></li>
+			<li class="u100"><span><span style="display:''">←</span></span></li>
+			<li class="u100"><span><span style="display:''">↓</span></span></li>
+			<li class="u100 rspace025"><span><span style="display:''">→</span></span></li>
+			<li class="u200"><span><span style="display:''">0</span></span></li>
+			<li class="u100"><span><span style="display:''">.</span></span></li>
+		</ul>
+	</div>
+
+	<div id="preview" class="preview">
+		<div class="keypreview">
+			<div class="previewcolor"></div>
+			<div id="changeWords" class="previewoverlay" onclick="changeWords()">无刻</div>
+		</div>
+	</div>
+	
+	<div id="sticker" class="sticker">
+		<p>键盘贴纸</p>
+	</div>
+	
+	<ul  style="float:left;width:916px;">
+		请选择贴纸:<br>
+		<select name="Select sticker" id="mysticker" onchange="handleFilesUser()"> 
+		<option value="5.jpg">初音</option> 
+		<option value="6.jpg">二西莫夫</option> 
+		</select> 
+		<button class="button" onclick="MoveUP()">UP</button>
+		<button class="button" onclick="MoveDOWN()">DOWN</button>
+		<button class="button" onclick="MoveLEFT()">LEFT</button>
+		<button class="button" onclick="MoveRIGHT()">RIGHT</button>
+		<button class="button" onclick="HorizontalTensilePlus()">HT +</button>
+		<button class="button" onclick="HorizontalTensileMinus()">HT -</button>
+		<button class="button" onclick="VerticalTensilePlus()">VT +</button>
+		<button class="button" onclick="VerticalTensileMinus()">VT -</button>
+	</ul>
+
+
+ </body>
+</html>

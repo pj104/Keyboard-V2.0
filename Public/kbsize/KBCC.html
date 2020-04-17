@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <title>&nbsp;&nbsp;键帽染色、键盘贴纸效果模拟工具 V2.0</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<script src="../js/jquery-1.8.3.min.js"></script>
+	<script src="../js/kbcc.js"  charset="GBK"></script>
+	<script src="../js/sticker.js"  charset="GBK"></script>
+	<script src="../js/jquery-labelauty.js"></script>
+	<script type="text/javascript" src="../js/sticker.js"></script>
+	<link href="../css/style.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="../css/jquery-labelauty.css">
+	<style>
+		ul { list-style-type: none;}
+		li { display: inline-block;}
+		li { margin: 10px 0;}
+		input.labelauty + label { font: 12px "Microsoft Yahei";}
+	</style>
+	<script>
+		$(function(){
+			$(':input').labelauty();
+		});
+	</script>
+<!--    <script type="text/javascript">-->
+<!--        function edit1(){-->
+<!--        document.getElementById('bg').style.background-image="url(images/sticker/2.png)";-->
+<!--         }-->
+<!--	</script>-->
+    <!-- CSS -->
+    <link rel="stylesheet" href="../bootstrap-3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/pe-icon-7-stroke.css">
+    <link rel="stylesheet" href="../css/eden-responsive.css">
+    <link rel="stylesheet" href="../css/default.css">
+    <link rel="stylesheet" href="../css/main.css">
+
+
+    <!-- 字体 -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron:400,500,700,900">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700">
+    <link href="https://fonts.googleapis.com/css?family=Timmana" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- favicon -->
+</head>
+<body>
+
+
+<div id="page" class="page">
+
+<header class="header16" id="header16" style="padding:0">
+		<nav role="navigation" class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+				<a href="" class="navbar-brand brand"><i class="fa fa-heart-o fa-flip-horizontal"></i>键帽染色、键盘贴纸效果模拟</a>
+                </div>
+
+                <div id="navbar-collapse-02" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+						<li style="margin:0"><a href="../index.html">首页</a></li>
+                        <li style="margin:0"><a href="">淘宝店铺</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="intro" style="padding:0">
+            <div class="container">
+                <div class="wrapper" style="position:relative;z-index:1000;background:url(../images/bg/33.png);padding:25px">
+
+					<div id="choosekb">
+						<h3>键盘布局</h3>
+						<ul class="dowebok">
+							<li><input type="radio" name="kb" data-labelauty="108键位" checked onclick="choseSize(this.value)" value="0"></li>
+							<li><input type="radio" name="kb" data-labelauty="104键位" onclick="choseSize(this.value)" value="1"></li>
+							<li><input type="radio" name="kb" data-labelauty="87键位" onclick="choseSize(this.value)" value="2"></li>
+
+<!--							<li><input type="radio" name="kb" data-labelauty="84键位" onclick="choseSize(this.value)" value="3"></li>-->
+<!--							<li><input type="radio" name="kb" data-labelauty="68键位" onclick="choseSize(this.value)" value="68"></li>-->
+<!--							<li><input type="radio" name="kb" data-labelauty="64键位(非左移)" onclick="choseSize(this.value)" value="64"></li>-->
+<!--							<li><input type="radio" name="kb" data-labelauty="64键位(左移)" onclick="choseSize(this.value)" value="64l"></li>-->
+<!--							<li><input type="radio" name="kb" data-labelauty="61键位" onclick="choseSize(this.value)" value="5"></li>-->
+						</ul>
+<!--						<h3>较小众布局</h3>-->
+<!--						<ul>-->
+<!--							<li><input type="radio" name="kb" data-labelauty="minila" onclick="choseSize(this.value)" value="minila"></li>-->
+<!--							<li><input type="radio" name="kb" data-labelauty="RK71" onclick="choseSize(this.value)" value="RK71"></li>	-->
+<!--							<li><input type="radio" name="kb" data-labelauty="小鲸鱼78" onclick="choseSize(this.value)" value="4"></li>-->
+<!--							<li><input type="radio" name="kb" data-labelauty="FC980M" onclick="choseSize(this.value)" value="6"></li>-->
+<!--							<li><input type="radio" name="kb" data-labelauty="魔岩96" onclick="choseSize(this.value)" value="7"></li>-->
+<!--							<li><input type="radio" name="kb" data-labelauty="K100GD96" onclick="choseSize(this.value)" value="8"></li>-->
+<!--							<li><input type="radio" name="kb" data-labelauty="CA66" onclick="choseSize(this.value)" value="ca66"></li>-->
+<!--							<li><input type="radio" name="kb" data-labelauty="CANOE & Space65" onclick="choseSize(this.value)" value="CANOE"></li>-->
+<!--							<li><input type="radio" name="kb" data-labelauty="1800mini" onclick="choseSize(this.value)" value="1800mini"></li> &ndash;&gt;-->
+<!--						</ul>-->
+					</div>
+					<iframe id="kbwindow" src="./KB108.html" scrolling="no" style="width:1050px"></iframe>
+				</div>
+			</div>
+		</div>
+	   
+</header>
+    <!-- Content section 1 -->
+    
+ 
+  
+</div><!-- /#page -->
+
+<!--=== Load JS here for greater good ====-->
+
+</body>
+</html>
