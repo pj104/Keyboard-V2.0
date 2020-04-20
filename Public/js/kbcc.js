@@ -69,14 +69,14 @@ function createColorRing () {//创建颜色选择板
 
 function changeWords(){//改变键盘正刻和无刻
 
-	if($('#changeWords').text()=='无刻'){
-		$('#changeWords').text('正刻');
+	if($('#changeWords').text()=='Empty'){
+		$('#changeWords').text('String');
 		 var ss = $('#keyboard li span span');
 		 for(var i=0;i<ss.length;i++){
 			 ss[i].style.display = 'none';
 		 }
 	}else{
-		$('#changeWords').text('无刻');
+		$('#changeWords').text('Empty');
 		var ss = $('#keyboard li span span');
 		 for(var i=0;i<ss.length;i++){
 			 ss[i].style.display = '';
