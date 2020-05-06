@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+	<script src="../js/jquery-1.8.3.min.js"></script>
+	<script src="../js/kbcc.js"  charset="GBK"></script>
+	<script src="../js/sticker.js"  charset="GBK"></script>
+	<link href="../css/style.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript">
+		$(document).ready(init);
+	</script>
+  <title>KB104</title>
+ </head>
+ <body>
+    <div id="keyboard104" style="width:1012px;">
+		<ul class="row realkeyboard">
+			<li class="u104"></li>
+		</ul>
+	</div>
+
+	
+	<div id="sticker" class="sticker">
+		<p>键盘贴纸</p>
+	</div>
+	
+	<ul  style="float:left;width:916px;">
+		请选择贴纸:<br>
+		<select name="Select sticker" id="mysticker" onchange="handleFilesUser104()"> 
+		
+		<option value="NO.001皮卡丘白浅.jpg">NO.001皮卡丘白浅.jpg</option>
+		<option value="NO.002皮卡丘白深.jpg">NO.002皮卡丘白深.jpg</option>
+		<option value="NO.003皮卡丘黑浅.jpg">NO.003皮卡丘黑浅.jpg</option>
+		<option value="NO.004皮卡丘黑深.jpg">NO.004皮卡丘黑深.jpg</option>
+		<option value="NO.005木兰黑.jpg">NO.005木兰黑.jpg</option>
+		<option value="NO.006花旦标准.jpg">NO.006花旦标准.jpg</option>
+		<option value="NO.007花旦无人.jpg">NO.007花旦无人.jpg</option>
+		<option value="NO.008花旦无字.jpg">NO.008花旦无字.jpg</option>
+		<option value="NO.009锦鲤娘红.png">NO.009锦鲤娘红.png</option>
+		<option value="NO.010锦鲤黄红.jpg">NO.010锦鲤黄红.jpg</option>
+		<option value="NO.011锦鲤白虹.jpg">NO.011锦鲤白虹.jpg</option>
+		<option value="NO.012珊瑚海蓝标准.jpg">NO.012珊瑚海蓝标准.jpg</option>
+		<option value="NO.013珊瑚海无字.jpg">NO.013珊瑚海无字.jpg</option>
+		<option value="NO.014珊瑚海蓝标.jpg">NO.014珊瑚海蓝标.jpg</option>
+		<option value="NO.015樱花标准.jpg">NO.015樱花标准.jpg</option>
+		<option value="NO.016樱花少女.jpg">NO.016樱花少女.jpg</option>
+		<option value="NO.017B站花嫁.jpg">NO.017B站花嫁.jpg</option>
+		<option value="NO.018B站拜年.png">NO.018B站拜年.png</option>
+		<option value="NO.019B站冬季.jpg">NO.019B站冬季.jpg</option>
+		<option value="NO.020B站青花瓷.png">NO.020B站青花瓷.png</option>
+		<option value="NO.021B站蓝白.png">NO.021B站蓝白.png</option>
+		<option value="NO.022二西莫夫.jpg">NO.022二西莫夫.jpg</option>
+		<option value="NO.023二西莫夫橙改.png">NO.023二西莫夫橙改.png</option>
+		<option value="NO.024二西莫夫红改.png">NO.024二西莫夫红改.png</option>
+		<option value="NO.025二西莫夫蓝改.png">NO.025二西莫夫蓝改.png</option>
+		<option value="NO.026蓝宝石黑.png">NO.026蓝宝石黑.png</option>
+		<option value="NO.027蓝宝石蓝.png">NO.027蓝宝石蓝.png</option>
+		<option value="NO.028蓝宝石红.png">NO.028蓝宝石红.png</option>
+		<option value="NO.029水墨灰.jpg">NO.029水墨灰.jpg</option>
+		<option value="NO.030森林绿.png">NO.030森林绿.png</option>
+		<option value="NO.031万圣节黑.jpg">NO.031万圣节黑.jpg</option>
+		<option value="NO.032海韵蓝.jpg">NO.032海韵蓝.jpg</option>
+		<option value="NO.033天选青.png">NO.033天选青.png</option>
+		<option value="NO.034古风青.jpg">NO.034古风青.jpg</option>
+		<option value="NO.035秦时明月.jpg">NO.035秦时明月.jpg</option>
+		<option value="NO.036龙猫青.jpg">NO.036龙猫青.jpg</option>
+		<option value="NO.037龙猫青白.jpg">NO.037龙猫青白.jpg</option>
+		<option value="NO.038火影忍者.jpg">NO.038火影忍者.jpg</option>
+		<option value="NO.039艾斯黄.jpg">NO.039艾斯黄.jpg</option>
+		<option value="NO.040龙珠橙黄.jpg">NO.040龙珠橙黄.jpg</option>
+		<option value="NO.041初音10周.png">NO.041初音10周.png</option>
+		<option value="NO.042初音混色.jpg">NO.042初音混色.jpg</option>
+		<option value="NO.043哆啦A梦蓝.jpg">NO.043哆啦A梦蓝.jpg</option>
+		<option value="NO.044马里奥红.jpg">NO.044马里奥红.jpg</option>
+		<option value="NO.045刀剑圣域蓝.png">NO.045刀剑圣域蓝.png</option>
+		<option value="NO.046春物白.png">NO.046春物白.png</option>
+		<option value="NO.047春物蓝.png">NO.047春物蓝.png</option>
+		<option value="NO.048楪祈绿蓝.png">NO.048楪祈绿蓝.png</option>
+		<option value="NO.049炮姐蓝.png">NO.049炮姐蓝.png</option>
+		<option value="NO.050蝴蝶忍紫.png">NO.050蝴蝶忍紫.png</option>
+		<option value="NO.051中野一花黄.png">NO.051中野一花黄.png</option>
+		<option value="NO.052中野二乃粉.png">NO.052中野二乃粉.png</option>
+		<option value="NO.053中野三玖蓝.png">NO.053中野三玖蓝.png</option>
+		<option value="NO.054中野四叶绿.png">NO.054中野四叶绿.png</option>
+		<option value="NO.055中野五月红.png">NO.055中野五月红.png</option>
+		<option value="NO.056四宫辉夜.png">NO.056四宫辉夜.png</option>
+		<option value="NO.57藤原千花书记.png">NO.057藤原千花书记.png</option>
+		<option value="NO.058夏洛特粉红.png">NO.058夏洛特粉红.png</option>
+		<option value="NO.059夏洛特粉紫.png">NO.059夏洛特粉紫.png</option>
+		<option value="NO.060和泉纱雾.png">NO.060和泉纱雾.png</option>
+		<option value="NO.061远坂凛红.png">NO.061远坂凛红.png</option>
+		<option value="NO.062saber蓝.png">NO.062saber蓝.png</option>
+		<option value="NO.063樱岛麻衣.png">NO.063樱岛麻衣.png</option>
+		<option value="NO.064 FX02.png'">NO.064 FX02.png'</option>
+		<option value="NO.065 FX莓.png'">NO.065 FX莓.png'</option>
+		<option value="NO.066可可萝.png">NO.066可可萝.png</option>
+		<option value="NO.067爱蜜莉雅.png">NO.067爱蜜莉雅.png</option>
+		<option value="NO.068霞之丘诗羽.png">NO.068霞之丘诗羽.png</option>
+		<option value="NO.069加藤惠.png">NO.069加藤惠.png</option>
+		<option value="NO.070秋莉莉.png">NO.070秋莉莉.png</option>
+
+		</select> 
+		<button class="button" onclick="MoveUP104()">UP</button>
+		<button class="button" onclick="MoveDOWN104()">DOWN</button>
+		<button class="button" onclick="MoveLEFT104()">LEFT</button>
+		<button class="button" onclick="MoveRIGHT104()">RIGHT</button>
+		<button class="button" onclick="HorizontalTensilePlus104()">HT +</button>
+		<button class="button" onclick="HorizontalTensileMinus104()">HT -</button>
+		<button class="button" onclick="VerticalTensilePlus104()">VT +</button>
+		<button class="button" onclick="VerticalTensileMinus104()">VT -</button>
+	</ul>
+ </body>
+</html>

@@ -103,6 +103,12 @@ function choseSize(num){//¸Ä±ä¼üÅÌ³ß´ç
 		document.getElementById("kbwindow").src ='./Z-MOYAN96.html';
 	}else if(8==num){
 		document.getElementById("kbwindow").src ='./Z-K100GD96.html';
+	}else if(9==num){
+		document.getElementById("kbwindow").src ='./KB108Real.html';
+	}else if(10==num){
+		document.getElementById("kbwindow").src ='./KB104Real.html';
+	}else if(11==num){
+		document.getElementById("kbwindow").src ='./KB87Real.html';
 	}else if('64l'==num){
 		document.getElementById("kbwindow").src ='./KB64L.html';
 	}else if('ca66'==num){

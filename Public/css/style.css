@@ -104,6 +104,125 @@ h2 {
 	box-shadow: inset 0 -2px 0 4px rgba(0,0,0,0.1);
 }
 
+#keyboard108 {
+	float: left;
+	font-size: 1.9em;
+	background-color: #222;
+	overflow: auto;
+	width: 616px;
+	padding: 9px 6px 15px 6px;
+	border-radius: 8px;
+	background-image:url(../images/sticker/4.png);
+	background-repeat:no-repeat;
+	background-position-x:center;
+	background-position-y:center;
+	background-size:123% 150%;
+	background-position:0px 0px;
+}
+
+#keyboard108 ul {
+	display: block;
+	float: left;
+	width: 100%;
+}
+
+#keyboard108 li {
+	display: block;
+	float: left;
+	height: 340px;
+	padding: 1px;
+	overflow: hidden;
+}
+
+#keyboard108 li span {
+	display: block;
+	width: 100%;
+	height: 38px;
+	text-align: center;
+	line-height: 37px;
+	border-radius: 5px;
+	box-shadow: inset 0 -2px 0 4px rgba(0,0,0,0.1);
+}
+
+#keyboard104 {
+	float: left;
+	font-size: 1.9em;
+	background-color: #222;
+	overflow: auto;
+	width: 616px;
+	padding: 9px 6px 15px 6px;
+	border-radius: 8px;
+	background-image:url(../images/sticker/4.png);
+	background-repeat:no-repeat;
+	background-position-x:center;
+	background-position-y:center;
+	background-size:123% 150%;
+	background-position:0px 0px;
+}
+
+#keyboard104 ul {
+	display: block;
+	float: left;
+	width: 100%;
+}
+
+#keyboard104 li {
+	display: block;
+	float: left;
+	height: 340px;
+	padding: 1px;
+	overflow: hidden;
+}
+
+#keyboard104 li span {
+	display: block;
+	width: 100%;
+	height: 38px;
+	text-align: center;
+	line-height: 37px;
+	border-radius: 5px;
+	box-shadow: inset 0 -2px 0 4px rgba(0,0,0,0.1);
+}
+#keyboard87 {
+	float: left;
+	font-size: 1.9em;
+	background-color: #222;
+	overflow: auto;
+	width: 616px;
+	padding: 9px 6px 15px 6px;
+	border-radius: 8px;
+	background-image:url(../images/sticker/4.png);
+	background-repeat:no-repeat;
+	background-position-x:center;
+	background-position-y:center;
+	background-size:123% 150%;
+	background-position:0px 0px;
+}
+
+#keyboard87 ul {
+	display: block;
+	float: left;
+	width: 100%;
+}
+
+#keyboard87 li {
+	display: block;
+	float: left;
+	height: 340px;
+	padding: 1px;
+	overflow: hidden;
+}
+
+#keyboard87 li span {
+	display: block;
+	width: 100%;
+	height: 38px;
+	text-align: center;
+	line-height: 37px;
+	border-radius: 5px;
+	box-shadow: inset 0 -2px 0 4px rgba(0,0,0,0.1);
+}
+
 .small {
 	font-size: 0.7em;
 }
@@ -150,6 +269,39 @@ h2 {
 
 .u625 {
 	width: 250px;
+}
+
+.u108 {
+	width: 1000px;
+	height: 480px;
+	background-image:url(../images/kb108/花旦.png);
+	background-repeat:no-repeat;
+	background-position-x:center;
+	background-position-y:center;
+	background-size:100% 100%;
+	background-position:0px 0px;
+}
+
+.u104 {
+	width: 1000px;
+	height: 480px;
+	background-image:url(../images/kb104/大碳.png);
+	background-repeat:no-repeat;
+	background-position-x:center;
+	background-position-y:center;
+	background-size:100% 100%;
+	background-position:0px 0px;
+}
+
+.u87 {
+	width: 780px;
+	height: 480px;
+	background-image:url(../images/kb87/花旦.png);
+	background-repeat:no-repeat;
+	background-position-x:center;
+	background-position-y:center;
+	background-size:100% 100%;
+	background-position:0px 0px;
 }
 
 #keyboard .rspace125 {
