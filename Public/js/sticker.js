@@ -49,19 +49,19 @@ function handleFilesUser87(files) {
 
 
 function changeKB108(files) {
-	var filenamne = document.getElementById('mysticker').value;
+	var filenamne = document.getElementById('myKB').value;
 	var imgpath = '../images/kb108/'+filenamne;
 	$('.u108').css('background-image', 'url(' + imgpath + ')');
 }
 
 function changeKB104(files) {
-	var filenamne = document.getElementById('mysticker').value;
+	var filenamne = document.getElementById('myKB').value;
 	var imgpath = '../images/kb104/'+filenamne;
 	$('.u104').css('background-image', 'url(' + imgpath + ')');
 }
 
 function changeKB87(files) {
-	var filenamne = document.getElementById('mysticker').value;
+	var filenamne = document.getElementById('myKB').value;
 	var imgpath = '../images/kb87/'+filenamne;
 	$('.u87').css('background-image', 'url(' + imgpath + ')');
 }
