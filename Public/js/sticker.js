@@ -47,6 +47,25 @@ function handleFilesUser87(files) {
 	$('#keyboard87').css('background-image', 'url(' + imgpath + ')');
 }
 
+
+function changeKB108(files) {
+	var filenamne = document.getElementById('mysticker').value;
+	var imgpath = '../images/kb108/'+filenamne;
+	$('.u108').css('background-image', 'url(' + imgpath + ')');
+}
+
+function changeKB104(files) {
+	var filenamne = document.getElementById('mysticker').value;
+	var imgpath = '../images/kb104/'+filenamne;
+	$('.u104').css('background-image', 'url(' + imgpath + ')');
+}
+
+function changeKB87(files) {
+	var filenamne = document.getElementById('mysticker').value;
+	var imgpath = '../images/kb87/'+filenamne;
+	$('.u87').css('background-image', 'url(' + imgpath + ')');
+}
+
 function HorizontalTensilePlus() {
 	HT = HT + 1;
 	var newHT=HT*5 + 100;
