@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+	<script src="../js/jquery-1.8.3.min.js"></script>
+	<script src="../js/kbcc.js"  charset="GBK"></script>
+	<script src="../js/sticker.js"></script>
+	<link href="../css/style.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript">
+		$(document).ready(init);
+	</script>
+    <script
+			  src="https://code.jquery.com/jquery-3.4.1.js"
+			  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+			  crossorigin="anonymous"></script>
+  <title>KB108</title>
+ </head>
+ <body>
+    <div id="keyboard3000" style="width:916px;">
+		<ul class="row realkeyboard">
+			<li class="u3000"></li>
+		</ul>
+	</div>
+
+	<div id="sticker" class="sticker">
+		<p>键帽</p>
+		<select name="Select kb" id="myKB" onchange="changeKB3000()">
+		<option value="花旦.png">花旦</option>
+		<option value="大碳.png">大碳</option> 
+		<option value="哔哩哔哩.png">哔哩哔哩</option>
+		<option value="海韵.png">海韵</option>
+		<option value="锦鲤.png">锦鲤</option>
+		<option value="万圣节.png">万圣节</option>
+		<option value="森灵.png">森灵</option>
+		<option value="樱花.png">樱花</option>
+		<option value="马里奥.png">马里奥</option>
+		</select> 
+	</div>
+	<div id="sticker" class="sticker">
+		<p>键盘贴纸</p>
+	</div>
+	
+	<ul  style="float:left;width:916px;">
+		请选择贴纸:<br>
+		<select name="Select sticker" id="mysticker" onchange="handleFilesUser3000()"> 
+		
+		<option value="NO.001木兰.png">NO.001木兰</option>
+		<option value="NO.002马里奥.png">NO.002马里奥</option>
+		<option value="NO.003B站花嫁.jpg">NO.003B站花嫁</option>
+		<option value="NO.004碧蓝航线.png">NO.004碧蓝航线</option>
+		<option value="NO.005刀剑圣域.png">NO.005刀剑圣域</option>
+		<option value="NO.006皮卡丘.png">NO.006皮卡丘</option>
+		<option value="NO.007火影忍者.png">NO.007火影忍者</option>
+		<option value="NO.008罪恶王冠.png">NO.008罪恶王冠</option>
+		<option value="NO.009樱花.png">NO.009樱花</option>
+
+		</select> 
+		<button class="button" onclick="MoveUP3000()">UP</button>
+		<button class="button" onclick="MoveDOWN3000()">DOWN</button>
+		<button class="button" onclick="MoveLEFT3000()">LEFT</button>
+		<button class="button" onclick="MoveRIGHT3000()">RIGHT</button>
+		<button class="button" onclick="HorizontalTensilePlus3000()">HT +</button>
+		<button class="button" onclick="HorizontalTensileMinus3000()">HT -</button>
+		<button class="button" onclick="VerticalTensilePlus3000()">VT +</button>
+		<button class="button" onclick="VerticalTensileMinus3000()">VT -</button>
+	</ul>
+ </body>
+</html>

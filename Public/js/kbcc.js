@@ -109,6 +109,8 @@ function choseSize(num){//¸Ä±ä¼üÅÌ³ß´ç
 		document.getElementById("kbwindow").src ='./KB104Real.html';
 	}else if(11==num){
 		document.getElementById("kbwindow").src ='./KB87Real.html';
+	}else if(12==num){
+		document.getElementById("kbwindow").src ='./KB3000Real.html';
 	}else if('64l'==num){
 		document.getElementById("kbwindow").src ='./KB64L.html';
 	}else if('ca66'==num){

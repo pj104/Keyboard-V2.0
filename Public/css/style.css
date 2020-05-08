@@ -112,7 +112,7 @@ h2 {
 	width: 616px;
 	padding: 9px 6px 15px 6px;
 	border-radius: 8px;
-	background-image:url(../images/sticker/4.png);
+	background-image:url(../images/sticker/NO.001皮卡丘白浅.jpg);
 	background-repeat:no-repeat;
 	background-position-x:center;
 	background-position-y:center;
@@ -152,7 +152,7 @@ h2 {
 	width: 616px;
 	padding: 9px 6px 15px 6px;
 	border-radius: 8px;
-	background-image:url(../images/sticker/4.png);
+	background-image:url(../images/sticker/NO.001皮卡丘白浅.jpg);
 	background-repeat:no-repeat;
 	background-position-x:center;
 	background-position-y:center;
@@ -191,7 +191,7 @@ h2 {
 	width: 616px;
 	padding: 9px 6px 15px 6px;
 	border-radius: 8px;
-	background-image:url(../images/sticker/4.png);
+	background-image:url(../images/sticker/NO.001皮卡丘白浅.jpg);
 	background-repeat:no-repeat;
 	background-position-x:center;
 	background-position-y:center;
@@ -214,6 +214,47 @@ h2 {
 }
 
 #keyboard87 li span {
+	display: block;
+	width: 100%;
+	height: 38px;
+	text-align: center;
+	line-height: 37px;
+	border-radius: 5px;
+	box-shadow: inset 0 -2px 0 4px rgba(0,0,0,0.1);
+}
+
+
+#keyboard3000 {
+	float: left;
+	font-size: 1.9em;
+	background-color: #222;
+	overflow: auto;
+	width: 916px;
+	padding: 9px 6px 15px 6px;
+	border-radius: 8px;
+	background-image:url(../images/sticker3000/NO.001木兰.png);
+	background-repeat:no-repeat;
+	background-position-x:center;
+	background-position-y:center;
+	background-size:110% 110%;
+	background-position:-35px -25px;
+}
+
+#keyboard3000 ul {
+	display: block;
+	float: left;
+	width: 100%;
+}
+
+#keyboard3000 li {
+	display: block;
+	float: left;
+	height: 340px;
+	padding: 1px;
+	overflow: hidden;
+}
+
+#keyboard3000 li span {
 	display: block;
 	width: 100%;
 	height: 38px;
@@ -297,6 +338,17 @@ h2 {
 	width: 780px;
 	height: 480px;
 	background-image:url(../images/kb87/大碳.png);
+	background-repeat:no-repeat;
+	background-position-x:center;
+	background-position-y:center;
+	background-size:100% 100%;
+	background-position:0px 0px;
+}
+
+.u3000 {
+	width: 900px;
+	height: 720px;
+	background-image:url(../images/kb3000/花旦.png);
 	background-repeat:no-repeat;
 	background-position-x:center;
 	background-position-y:center;
