@@ -2,6 +2,14 @@ var HT = 123;
 var VT = 150;
 var MoveUD = -95;
 var MoveLR = -135;
+var V_HT = 123;
+var V_VT = 150;
+var V_MoveUD = -75;
+var V_MoveLR = -120;
+var HT_3000 = 110;
+var VT_3000 = 110;
+var MoveUD_3000 = -25;
+var MoveLR_3000 = -35;
 function handleFiles(files) {
 var imgpath = '';
   var preview = document.getElementById('keyboard');
@@ -79,9 +87,9 @@ function changeKB3000(files) {
 }
 
 function HorizontalTensilePlus() {
-	HT = HT + 1;
-	var newHT=HT*5 + 100;
-	var newVT=VT*5 + 100;
+	V_HT = V_HT + 1;
+	var newHT=V_HT*5 + 100;
+	var newVT=V_VT*5 + 100;
 	var newsize=newHT+'%' + ' ' + newVT+'%';
 	$('#keyboard').css('background-size', newsize);
 }
@@ -107,16 +115,16 @@ function HorizontalTensilePlus87() {
 	$('#keyboard87').css('background-size', newsize);
 }
 function HorizontalTensilePlus3000() {
-	HT = HT + 1;
-	var newHT=HT*5 + 100;
-	var newVT=VT*5 + 100;
+	HT_3000 = HT_3000 + 1;
+	var newHT=HT_3000*5 + 100;
+	var newVT=VT_3000*5 + 100;
 	var newsize=newHT+'%' + ' ' + newVT+'%';
 	$('#keyboard3000').css('background-size', newsize);
 }
 function HorizontalTensileMinus() {
-	HT = HT - 1;
-	var newHT=HT*5 + 100;
-	var newVT=VT*5 + 100;
+	V_HT = V_HT - 1;
+	var newHT=V_HT*5 + 100;
+	var newVT=V_VT*5 + 100;
 	var newsize=newHT+'%' + ' ' + newVT+'%';
 	$('#keyboard').css('background-size', newsize);
 }
@@ -142,16 +150,16 @@ function HorizontalTensileMinus87() {
 	$('#keyboard87').css('background-size', newsize);
 }
 function HorizontalTensileMinus3000() {
-	HT = HT - 1;
-	var newHT=HT*5 + 100;
-	var newVT=VT*5 + 100;
+	HT_3000 = HT_3000 - 1;
+	var newHT=HT_3000*5 + 100;
+	var newVT=VT_3000*5 + 100;
 	var newsize=newHT+'%' + ' ' + newVT+'%';
 	$('#keyboard3000').css('background-size', newsize);
 }
 function VerticalTensilePlus() {
-	VT = VT + 1;
-	var newHT=HT*5 + 100;
-	var newVT=VT*5 + 100;
+	V_VT = V_VT + 1;
+	var newHT=V_HT*5 + 100;
+	var newVT=V_VT*5 + 100;
 	var newsize=newHT+'%' + ' ' + newVT+'%';
 	$('#keyboard').css('background-size', newsize);
 }
@@ -177,16 +185,16 @@ function VerticalTensilePlus87() {
 	$('#keyboard87').css('background-size', newsize);
 }
 function VerticalTensilePlus3000() {
-	VT = VT + 1;
-	var newHT=HT*5 + 100;
-	var newVT=VT*5 + 100;
+	VT_3000 = VT_3000 + 1;
+	var newHT=HT_3000*5 + 100;
+	var newVT=VT_3000*5 + 100;
 	var newsize=newHT+'%' + ' ' + newVT+'%';
 	$('#keyboard3000').css('background-size', newsize);
 }
 function VerticalTensileMinus() {		
-	VT = VT - 1;
-	var newHT=HT*5 + 100;
-	var newVT=VT*5 + 100;
+	V_VT = V_VT - 1;
+	var newHT=V_HT*5 + 100;
+	var newVT=V_VT*5 + 100;
 	var newsize=newHT+'%' + ' ' + newVT+'%';
 	$('#keyboard').css('background-size', newsize);
 }
@@ -212,15 +220,15 @@ function VerticalTensileMinus87() {
 	$('#keyboard87').css('background-size', newsize);
 }
 function VerticalTensileMinus3000() {		
-	VT = VT - 1;
-	var newHT=HT*5 + 100;
-	var newVT=VT*5 + 100;
+	VT_3000 = VT_3000 - 1;
+	var newHT=HT_3000*5 + 100;
+	var newVT=VT_3000*5 + 100;
 	var newsize=newHT+'%' + ' ' + newVT+'%';
 	$('#keyboard3000').css('background-size', newsize);
 }
 function MoveUP() {
-	MoveUD = MoveUD - 5;
-	var newposition= MoveLR + 'px '+ MoveUD +'px';
+	V_MoveUD = V_MoveUD - 5;
+	var newposition= V_MoveLR + 'px '+ V_MoveUD +'px';
 	$('#keyboard').css('background-position', newposition);
 }
 function MoveUP108() {
@@ -239,13 +247,13 @@ function MoveUP87() {
 	$('#keyboard87').css('background-position', newposition);
 }
 function MoveUP3000() {
-	MoveUD = MoveUD - 5;
-	var newposition= MoveLR + 'px '+ MoveUD +'px';
+	MoveUD_3000 = MoveUD_3000 - 5;
+	var newposition= MoveLR_3000 + 'px '+ MoveUD_3000 +'px';
 	$('#keyboard3000').css('background-position', newposition);
 }
 function MoveDOWN() {
-	MoveUD = MoveUD + 5;
-	var newposition= MoveLR + 'px '+ MoveUD +'px';
+	V_MoveUD = V_MoveUD + 5;
+	var newposition= V_MoveLR + 'px '+ V_MoveUD +'px';
 	$('#keyboard').css('background-position', newposition);
 }
 function MoveDOWN108() {
@@ -264,13 +272,13 @@ function MoveDOWN87() {
 	$('#keyboard87').css('background-position', newposition);
 }
 function MoveDOWN3000() {
-	MoveUD = MoveUD + 5;
-	var newposition= MoveLR + 'px '+ MoveUD +'px';
+	MoveUD_3000 = MoveUD_3000 + 5;
+	var newposition= MoveLR_3000 + 'px '+ MoveUD_3000 +'px';
 	$('#keyboard3000').css('background-position', newposition);
 }
 function MoveLEFT() {
-	MoveLR = MoveLR - 5;
-	var newposition= MoveLR + 'px '+ MoveUD +'px';
+	V_MoveLR = V_MoveLR - 5;
+	var newposition= V_MoveLR + 'px '+ V_MoveUD +'px';
 	$('#keyboard').css('background-position', newposition);
 }
 function MoveLEFT108() {
@@ -289,13 +297,13 @@ function MoveLEFT87() {
 	$('#keyboard87').css('background-position', newposition);
 }
 function MoveLEFT3000() {
-	MoveLR = MoveLR - 5;
-	var newposition= MoveLR + 'px '+ MoveUD +'px';
+	MoveLR_3000 = MoveLR_3000 - 5;
+	var newposition= MoveLR_3000 + 'px '+ MoveUD_3000 +'px';
 	$('#keyboard3000').css('background-position', newposition);
 }
 function MoveRIGHT() {
-	MoveLR = MoveLR + 5;
-	var newposition= MoveLR + 'px '+ MoveUD +'px';
+	V_MoveLR = V_MoveLR + 5;
+	var newposition= V_MoveLR + 'px '+ V_MoveUD +'px';
 	$('#keyboard').css('background-position', newposition);
 }
 function MoveRIGHT108() {
@@ -314,8 +322,8 @@ function MoveRIGHT87() {
 	$('#keyboard87').css('background-position', newposition);
 }
 function MoveRIGHT3000() {
-	MoveLR = MoveLR + 5;
-	var newposition= MoveLR + 'px '+ MoveUD +'px';
+	MoveLR_3000 = MoveLR_3000 + 5;
+	var newposition= MoveLR_3000 + 'px '+ MoveUD_3000 +'px';
 	$('#keyboard3000').css('background-position', newposition);
 }
 function eco_refresh(){
