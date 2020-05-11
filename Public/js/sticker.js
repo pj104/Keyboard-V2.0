@@ -1,13 +1,13 @@
-var HT = 123;
-var VT = 150;
+var HT = 0;
+var VT = 0;
 var MoveUD = -95;
 var MoveLR = -135;
-var V_HT = 123;
-var V_VT = 150;
+var V_HT = 0;
+var V_VT = 0;
 var V_MoveUD = -75;
 var V_MoveLR = -120;
-var HT_3000 = 110;
-var VT_3000 = 110;
+var HT_3000 = 0;
+var VT_3000 = 0;
 var MoveUD_3000 = -25;
 var MoveLR_3000 = -35;
 function handleFiles(files) {
@@ -88,141 +88,141 @@ function changeKB3000(files) {
 
 function HorizontalTensilePlus() {
 	V_HT = V_HT + 1;
-	var newHT=V_HT*5 + 100;
-	var newVT=V_VT*5 + 100;
+	var newHT=V_HT*5 + 123;
+	var newVT=V_VT*5 + 150;
 	var newsize=newHT+'%' + ' ' + newVT+'%';
 	$('#keyboard').css('background-size', newsize);
 }
 function HorizontalTensilePlus108() {
 	HT = HT + 1;
-	var newHT=HT*5 + 100;
-	var newVT=VT*5 + 100;
+	var newHT=HT*5 + 123;
+	var newVT=VT*5 + 150;
 	var newsize=newHT+'%' + ' ' + newVT+'%';
 	$('#keyboard108').css('background-size', newsize);
 }
 function HorizontalTensilePlus104() {
 	HT = HT + 1;
-	var newHT=HT*5 + 100;
-	var newVT=VT*5 + 100;
+	var newHT=HT*5 + 123;
+	var newVT=VT*5 + 150;
 	var newsize=newHT+'%' + ' ' + newVT+'%';
 	$('#keyboard104').css('background-size', newsize);
 }
 function HorizontalTensilePlus87() {
 	HT = HT + 1;
-	var newHT=HT*5 + 100;
-	var newVT=VT*5 + 100;
+	var newHT=HT*5 + 123;
+	var newVT=VT*5 + 150;
 	var newsize=newHT+'%' + ' ' + newVT+'%';
 	$('#keyboard87').css('background-size', newsize);
 }
 function HorizontalTensilePlus3000() {
 	HT_3000 = HT_3000 + 1;
-	var newHT=HT_3000*5 + 100;
-	var newVT=VT_3000*5 + 100;
+	var newHT=HT_3000*5 + 110;
+	var newVT=VT_3000*5 + 110;
 	var newsize=newHT+'%' + ' ' + newVT+'%';
 	$('#keyboard3000').css('background-size', newsize);
 }
 function HorizontalTensileMinus() {
 	V_HT = V_HT - 1;
-	var newHT=V_HT*5 + 100;
-	var newVT=V_VT*5 + 100;
+	var newHT=V_HT*5 + 123;
+	var newVT=V_VT*5 + 150;
 	var newsize=newHT+'%' + ' ' + newVT+'%';
 	$('#keyboard').css('background-size', newsize);
 }
 function HorizontalTensileMinus108() {
 	HT = HT - 1;
-	var newHT=HT*5 + 100;
-	var newVT=VT*5 + 100;
+	var newHT=HT*5 + 123;
+	var newVT=VT*5 + 150;
 	var newsize=newHT+'%' + ' ' + newVT+'%';
 	$('#keyboard108').css('background-size', newsize);
 }
 function HorizontalTensileMinus104() {
 	HT = HT - 1;
-	var newHT=HT*5 + 100;
-	var newVT=VT*5 + 100;
+	var newHT=HT*5 + 123;
+	var newVT=VT*5 + 150;
 	var newsize=newHT+'%' + ' ' + newVT+'%';
 	$('#keyboard104').css('background-size', newsize);
 }
 function HorizontalTensileMinus87() {
 	HT = HT - 1;
-	var newHT=HT*5 + 100;
-	var newVT=VT*5 + 100;
+	var newHT=HT*5 + 123;
+	var newVT=VT*5 + 150;
 	var newsize=newHT+'%' + ' ' + newVT+'%';
 	$('#keyboard87').css('background-size', newsize);
 }
 function HorizontalTensileMinus3000() {
 	HT_3000 = HT_3000 - 1;
-	var newHT=HT_3000*5 + 100;
-	var newVT=VT_3000*5 + 100;
+	var newHT=HT_3000*5 + 110;
+	var newVT=VT_3000*5 + 110;
 	var newsize=newHT+'%' + ' ' + newVT+'%';
 	$('#keyboard3000').css('background-size', newsize);
 }
 function VerticalTensilePlus() {
 	V_VT = V_VT + 1;
-	var newHT=V_HT*5 + 100;
-	var newVT=V_VT*5 + 100;
+	var newHT=V_HT*5 + 123;
+	var newVT=V_VT*5 + 150;
 	var newsize=newHT+'%' + ' ' + newVT+'%';
 	$('#keyboard').css('background-size', newsize);
 }
 function VerticalTensilePlus108() {
 	VT = VT + 1;
-	var newHT=HT*5 + 100;
-	var newVT=VT*5 + 100;
+	var newHT=HT*5 + 123;
+	var newVT=VT*5 + 150;
 	var newsize=newHT+'%' + ' ' + newVT+'%';
 	$('#keyboard108').css('background-size', newsize);
 }
 function VerticalTensilePlus104() {
 	VT = VT + 1;
-	var newHT=HT*5 + 100;
-	var newVT=VT*5 + 100;
+	var newHT=HT*5 + 123;
+	var newVT=VT*5 + 150;
 	var newsize=newHT+'%' + ' ' + newVT+'%';
 	$('#keyboard104').css('background-size', newsize);
 }
 function VerticalTensilePlus87() {
 	VT = VT + 1;
-	var newHT=HT*5 + 100;
-	var newVT=VT*5 + 100;
+	var newHT=HT*5 + 123;
+	var newVT=VT*5 + 150;
 	var newsize=newHT+'%' + ' ' + newVT+'%';
 	$('#keyboard87').css('background-size', newsize);
 }
 function VerticalTensilePlus3000() {
 	VT_3000 = VT_3000 + 1;
-	var newHT=HT_3000*5 + 100;
-	var newVT=VT_3000*5 + 100;
+	var newHT=HT_3000*5 + 110;
+	var newVT=VT_3000*5 + 110;
 	var newsize=newHT+'%' + ' ' + newVT+'%';
 	$('#keyboard3000').css('background-size', newsize);
 }
 function VerticalTensileMinus() {		
 	V_VT = V_VT - 1;
-	var newHT=V_HT*5 + 100;
-	var newVT=V_VT*5 + 100;
+	var newHT=V_HT*5 + 123;
+	var newVT=V_VT*5 + 150;
 	var newsize=newHT+'%' + ' ' + newVT+'%';
 	$('#keyboard').css('background-size', newsize);
 }
 function VerticalTensileMinus108() {		
 	VT = VT - 1;
-	var newHT=HT*5 + 100;
-	var newVT=VT*5 + 100;
+	var newHT=HT*5 + 123;
+	var newVT=VT*5 + 150;
 	var newsize=newHT+'%' + ' ' + newVT+'%';
 	$('#keyboard108').css('background-size', newsize);
 }
 function VerticalTensileMinus104() {		
 	VT = VT - 1;
-	var newHT=HT*5 + 100;
-	var newVT=VT*5 + 100;
+	var newHT=HT*5 + 123;
+	var newVT=VT*5 + 150;
 	var newsize=newHT+'%' + ' ' + newVT+'%';
 	$('#keyboard104').css('background-size', newsize);
 }
 function VerticalTensileMinus87() {		
 	VT = VT - 1;
-	var newHT=HT*5 + 100;
-	var newVT=VT*5 + 100;
+	var newHT=HT*5 + 123;
+	var newVT=VT*5 + 150;
 	var newsize=newHT+'%' + ' ' + newVT+'%';
 	$('#keyboard87').css('background-size', newsize);
 }
 function VerticalTensileMinus3000() {		
 	VT_3000 = VT_3000 - 1;
-	var newHT=HT_3000*5 + 100;
-	var newVT=VT_3000*5 + 100;
+	var newHT=HT_3000*5 + 110;
+	var newVT=VT_3000*5 + 110;
 	var newsize=newHT+'%' + ' ' + newVT+'%';
 	$('#keyboard3000').css('background-size', newsize);
 }
